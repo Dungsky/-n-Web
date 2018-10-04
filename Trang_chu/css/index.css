@@ -1,0 +1,376 @@
+*{
+	box-sizing: border-box;
+}
+body, html{
+	width: 100%;
+	padding: 0;
+	margin:  0;
+	font-family: "Arial", sans-serif;
+}
+.wrapper{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+/* CSS HEADER */
+.header{
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	padding: 1rem 10rem;
+	position: relative;
+}
+.header .heading{
+	font-size: 40px;
+	font-family: "Comic Sans MS";
+}
+.header .box-cart{
+	position: absolute;
+	right: 4rem;
+	align-items: center;
+	display: flex;
+}
+.header .box-cart .your {
+	text-align: right;
+	margin: 10px 1rem;
+}
+.header .box-cart .cart i{
+	font-size:30px;
+	color: #DDCC0C;
+	background-color: #eee;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* CSS NAVIGATION */
+	/* CSS ITEMS */
+.nav{
+	background-color: rgba(94, 45, 3, 1.0);
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	overflow: auto;
+	position: relative;
+}
+.items-left{
+	width: 60%;
+}
+.items-left .contact{
+	margin: 0;
+	list-style-type: none;
+}
+.items-left .contact .items{
+		padding: 1rem;
+		float: left;
+}
+.items-left .contact .border-left{
+	border-left: 1px solid gray;
+	border-radius: 5px;
+}
+.items-left .contact .items a{
+		color: white;
+		text-decoration: none;
+		font-weight: bold;	
+}
+.items-left .contact .items:hover{
+	background-color: #2A1D0D;
+	
+}
+.items-left .contact .items:hover  a{
+	color: #FF8A00;
+}
+
+		/* CSS BOX-SEARCH */
+.nav-right{
+	width: 40%;
+}
+.box-search{
+	position: absolute;
+	right: 2rem;
+	display: flex;
+}
+
+.box-search .text-field{
+	position: relative;
+}
+
+.box-search .text-field i{
+	position: absolute;
+	left: 10px;
+	top: 1rem;
+	color: gray;
+	font-size: 20px;
+}
+.box-search .text-field input{
+	padding: .5rem 2rem;
+	margin-top: 10px;
+	border-radius: 5px 0 0 5px;
+}
+.box-search button{
+	margin-top: 10px;
+	background-color: #D50000;
+	color: white;
+	font-weight: bold;
+}
+
+
+/* CONATINER CSS */
+.container{
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	background-color: #f1f0f0;
+	overflow: auto;
+	padding: 0.5rem;
+}
+/* CSS ASIDEBAR  */
+.aside{
+	width: 20%;
+	min-height: 50px;
+	margin: 0.5rem;
+	border-radius: 10px;
+}
+.aside .aside-top, .aside-bottom{
+	border-radius: 10px;
+	background-color: #ddd;
+	margin-bottom: 1rem;
+}
+.aside .aside-top h2, .aside .aside-bottom h3{
+	margin: 0;
+	padding: 1rem;
+	background-color: #C78647;
+	color: white;
+	border-radius: 10px 10px 0 0;
+	font-family: "Comic Sans MS";
+}
+.aside .aside-top ul, .aside .aside-bottom ul{
+	margin: 0;
+	padding: 1rem 1rem 2rem;
+}
+.aside .aside-top ul li, .aside .aside-bottom ul li{
+	list-style-type: none;
+	padding: 1rem .6rem 0.2rem;
+	border-bottom: 1px dashed gray;
+	/* background-color: #8A3E01; */
+}
+.aside .aside-top ul li a, .aside .aside-bottom ul li a {
+	text-decoration: none;
+	color: black;
+}
+.aside .aside-top ul li:hover, .aside .aside-bottom ul li:hover {
+	border-radius: 5px 5px 0 0 ;
+	background-color: #8A3E01;
+}
+ .aside .aside-bottom ul li:hover a{
+		color: #FF8A00;
+}
+.aside .aside-top ul li:hover a{
+		color: #FF8A00;
+}
+
+/* CSS ARTICLE  */
+.article{
+	width: 80%;
+	overflow: hidden;
+	margin: 0.5rem;
+}
+/* SLIDE */
+.article .slide{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin-bottom: 1rem;
+	background-color: pink;
+	border-radius: 10px;
+}
+.left-chevron, .right-chevron{
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	font-size: 34px;
+	color: #DDCC0C;
+	padding: .5rem;
+	cursor: pointer;
+	transition: 220ms;
+	border-radius: 0 10px 10px 0;
+}
+.right-chevron {
+	right: 0;
+	border-radius: 10px 0 0 10px;
+}
+.right-chevron:hover, .left-chevron:hover{
+	background-color: white;
+}
+.box-slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.box-slide .slide-img{
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+
+}
+
+.dot-box {
+	position: absolute;
+	left: 47%;
+	bottom: 1rem;
+	color: #DDCC0C;
+}
+/* ROOM */
+ .room {
+ 	width: 100%;
+ 	padding-bottom: 1rem;
+	overflow: auto;
+	display: flex;
+
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem; */
+}
+.box-room{
+	max-width: 33%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	/* flex-wrap: wrap;  */
+	box-shadow: 2px 2px 2px 2px gray;
+}
+
+.img-room img{
+	width: 100%;
+	height: 140px;
+	display: block;
+	border-radius: 10px;
+	border:  2px solid white;
+}
+.box-room .text{
+	color: white;
+	background-color: #482400cf;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 5px;
+	bottom: -50%;
+	transition: 220ms;
+	position: absolute;
+	font-weight: bold;
+	left: 0;
+	right: 0
+}
+.box-room:hover .text{
+	bottom: .5rem;
+	left: .5rem;
+	right: .5rem;
+	display: block;
+}
+
+/* CSS PRODUCTS */
+.money {
+	padding: 2rem 0;
+	margin-top: 1rem;
+}
+.money .tieude{
+	font-size: 20px;
+	width: 100%;
+	padding: .5rem 0;
+	margin-bottom: 1rem;
+	border-bottom: 2px solid #CF9353;
+}
+.products{
+	padding: .5rem 0;
+	display: flex;
+	position: relative;
+	/* display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+	grid-gap: 1rem; */
+	
+}
+.box-img-products{
+	width: 25%;
+	position: relative;
+	margin: 0 0.5rem;
+}
+.box-img-products img{
+	width: 100%;
+	height: 200px;
+	display: block;
+	/* border:  1px solid white;
+	box-shadow: 2px 2px 2px gray; */
+}
+.box-img-products img:hover{
+	border:  1px solid white;
+	box-shadow: 2px 2px 2px 2px gray;
+}
+.text{
+	padding: 1rem;
+}
+.text .gia_tien{
+	position: absolute;
+	right:  1rem;
+	color: red;
+	font-weight: bold;
+}
+.products-left{
+	margin-left: 0;
+}
+.products-right{
+	margin-right: 0;
+}
+/* CSS FOOTER */
+.footer{
+	background-color: #fff;
+	overflow: auto;
+}
+.footer ul{
+	display: flex;
+	list-style-type: none;
+	margin-left: 20%;
+}
+.footer ul li {
+	margin: 0 2rem;
+
+}
+.footer ul li a{
+	color: #CF9353;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+	/* CSS RESPONSIVE HEADER */
+	.header{
+		padding: 1rem 2rem;
+	}
+	.header .heading{
+	font-size: 25px;
+	transition: 220ms;
+	left: 2rem;
+}
+	.header .box-cart{
+		font-size: 12px;
+		transition: 220ms;
+
+	}
+	.header .box-cart .cart i{
+	font-size:20px;
+	transition: 220ms;
+	padding: 5px;
+}
+	/* CSS RESPONSIVE NAVIGATION */
+	.items-left .contact .items{
+		/* float: none;
+		border: none; */
+		padding: 0.5rem;
+		font-size: 10px;
+	}
+	.nav-right .text-field input{
+		width: 120px;
+	}
+}
